@@ -9,6 +9,8 @@ sites:
     url: $URL_CLOUD_WEB
   - name: Domotique
     url: $URL_DOMO_WEB
+    check: "tcp-ping"
+    port: $PORT_DOMO_WEB
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
